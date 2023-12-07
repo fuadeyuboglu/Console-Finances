@@ -90,3 +90,10 @@ var finances = [
 
 // Total Months
 let totalMonths = finances.length;
+
+
+// Net Total
+let netTotal = 0;
+for (let i = 0; i < totalMonths; i++) {
+    netTotal += finances[i][1];
+}
