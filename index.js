@@ -112,3 +112,17 @@ for (let i = 1; i < totalMonths; i++) {
 
 averageChange = (totalChange / (totalMonths - 1))
 let roundedAverageChange = Math.round(100 * averageChange) / 100;
+
+
+// Greatest Increase
+let greatestIncreaseDate;
+let greatestIncreaseAmount = 0;
+
+for (let i = 1; i < totalMonths; i++) {
+  
+  if ((finances[i][1] - finances[i - 1][1]) > greatestIncreaseAmount) {
+    greatestIncreaseAmount = finances[i][1] - finances[i - 1][1];
+    greatestIncreaseDate = finances[i][0]
+  }
+
+}
