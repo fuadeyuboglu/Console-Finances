@@ -126,3 +126,17 @@ for (let i = 1; i < totalMonths; i++) {
   }
 
 }
+
+
+// Greatest Decrease
+let greatestDecreaseDate;
+let greatestDecreaseAmount = 0;
+
+for (let i = 1; i < totalMonths; i++) {
+  
+  if ((finances[i][1] - finances[i - 1][1]) < greatestDecreaseAmount) {
+    greatestDecreaseAmount = finances[i][1] - finances[i - 1][1];
+    greatestDecreaseDate = finances[i][0]
+  }
+
+}
