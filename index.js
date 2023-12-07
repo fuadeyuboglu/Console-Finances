@@ -97,3 +97,18 @@ let netTotal = 0;
 for (let i = 0; i < totalMonths; i++) {
     netTotal += finances[i][1];
 }
+
+
+// Average of Change
+// Total / (Number of Months -1)
+let totalChange = 0;
+let averageChange;
+
+for (let i = 1; i < totalMonths; i++) {
+  
+  totalChange += finances[i][1] - finances[i - 1][1]
+
+}
+
+averageChange = (totalChange / (totalMonths - 1))
+let roundedAverageChange = Math.round(100 * averageChange) / 100;
