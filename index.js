@@ -140,3 +140,13 @@ for (let i = 1; i < totalMonths; i++) {
   }
 
 }
+
+
+// Log data to console
+console.log("Financial Analysis")
+console.log("-------------------")
+console.log(`Total Months: ${totalMonths}`)
+console.log(`Total: $${netTotal}`)
+console.log(`Average Change: ${roundedAverageChange}`)
+console.log(`Greatest Increase in Profits/Losses: ${greatestIncreaseDate} ($${greatestIncreaseAmount})`)
+console.log(`Greatest Decrease in Profits/Losses: ${greatestDecreaseDate} ($${greatestDecreaseAmount})`)
