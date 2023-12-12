@@ -143,10 +143,6 @@ for (let i = 1; i < totalMonths; i++) {
 
 
 // Log data to console
-console.log("Financial Analysis")
-console.log("-------------------")
-console.log(`Total Months: ${totalMonths}`)
-console.log(`Total: $${netTotal}`)
-console.log(`Average Change: ${roundedAverageChange}`)
-console.log(`Greatest Increase in Profits/Losses: ${greatestIncreaseDate} ($${greatestIncreaseAmount})`)
-console.log(`Greatest Decrease in Profits/Losses: ${greatestDecreaseDate} ($${greatestDecreaseAmount})`)
+const logSyntax = "Financial Analysis\n" + "-------------------\n" + `Total Months: ${totalMonths}\n` + `Total: $${netTotal}\n` + `Average Change: ${roundedAverageChange}\n` + `Greatest Increase in Profits/Losses: ${greatestIncreaseDate} ($${greatestIncreaseAmount})\n` + `Greatest Decrease in Profits/Losses: ${greatestDecreaseDate} ($${greatestDecreaseAmount})`
+
+console.log(logSyntax)
